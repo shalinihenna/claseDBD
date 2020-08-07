@@ -7,7 +7,6 @@ use Faker\Generator as Faker;
 
 $factory->define(Proveedore::class, function (Faker $faker) {
     return [
-
         'name' => $faker->word,
         'telefono' => $faker->phoneNumber,
     ];
