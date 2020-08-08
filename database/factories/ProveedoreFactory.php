@@ -8,6 +8,6 @@ use Faker\Generator as Faker;
 $factory->define(Proveedore::class, function (Faker $faker) {
     return [
         'name' => $faker->word,
-        'telefono' => $faker->phoneNumber,
+        'telefono' => $faker->numberBetween($min=50, $max=200),
     ];
 });
