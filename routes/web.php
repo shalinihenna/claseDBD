@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*Route::get('/supermercado','SupermercadoController@index');
+Route::post('/supermercado','SupermercadoController@store');
+Route::get('/supermercado/{id}','SupermercadoController@show');
+Route::patch('/supermercado/{id}','SupermercadoController@update');
+Route::delete('/supermercado/{id}','SupermercadoController@destroy');*/
+
+Route::resource('supermercados','SupermercadoController');
